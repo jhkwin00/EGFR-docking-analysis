@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 EGFR (Epidermal Growth Factor Receptor) is a well-established oncology target that is overactivated in many cancer cells.  
 This project structurally analyzes the binding mechanism of "Gefitinib", a first-generation EGFR inhibitor,  
@@ -13,19 +13,19 @@ and investigates how the "T790M resistance mutation" affects binding affinity th
 
 ---
 
-## 🔬 Key Results
+## Key Results
 
 | Condition | Binding Energy (ΔG) | Interpretation |
 |-----------|-------------------|----------------|
-| Wild-type EGFR + Gefitinib | "-8.755 kcal/mol" | Strong binding ✅ |
-| T790M mutant EGFR + Gefitinib | "-7.320 kcal/mol" | Reduced binding ⚠️ |
+| Wild-type EGFR + Gefitinib | "-8.755 kcal/mol" | Strong binding  |
+| T790M mutant EGFR + Gefitinib | "-7.320 kcal/mol" | Reduced binding ️ |
 | "Difference" | "1.435 kcal/mol" | Structural basis of resistance |
 
 > The T790M mutation reduces Gefitinib binding affinity by approximately "16%", consistent with clinically observed drug resistance.
 
 ---
 
-## 🛠️ Tools & Environment
+## ️ Tools & Environment
 
 | Tool | Version | Purpose |
 |------|---------|---------|
@@ -37,7 +37,7 @@ and investigates how the "T790M resistance mutation" affects binding affinity th
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 EGFR_project/
@@ -60,7 +60,7 @@ EGFR_project/
 
 ---
 
-## 🔄 Analysis Workflow
+## Analysis Workflow
 
 ```
 [Step 1] Target Structure Analysis
@@ -83,7 +83,7 @@ Compare binding energies: wild-type vs T790M mutant
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 ### 1. Gefitinib - EGFR Hydrogen Bond Analysis
 - Hydrogen bond formation confirmed with key active site residues (Met769, Thr766)
@@ -100,7 +100,7 @@ Compare binding energies: wild-type vs T790M mutant
 
 ---
 
-## 🖼️ Visualization
+## ️ Visualization
 
 ### Docking Result
 ![EGFR Docking Result](docking/EGFR_docking_result.png)
@@ -124,7 +124,7 @@ Orange → Mutant M790 residue (Methionine)
 
 ---
 
-## 💡 Conclusion
+## Conclusion
 
 1. "Gefitinib binds strongly to the EGFR active site", competitively inhibiting ATP binding through hydrogen bond interactions.
 2. "The T790M mutation increases gatekeeper residue bulk", reducing the available binding space for Gefitinib.
@@ -132,7 +132,7 @@ Orange → Mutant M790 residue (Methionine)
 
 ---
 
-## 📚 References
+## References
 
 - Yun, C.H. et al. (2008). The T790M mutation in EGFR kinase causes drug resistance. *PNAS*
 - Trott, O. & Olson, A.J. (2010). AutoDock Vina. *J. Comp. Chem.*
@@ -140,7 +140,7 @@ Orange → Mutant M790 residue (Methionine)
 
 ---
 
-## 👤 Author
+## Author
 
 "Janghyun Kim" | Aspiring Structural Biology & Drug Discovery Researcher  
 GitHub: [@jhkwin00](https://github.com/jhkwin00)

@@ -119,7 +119,8 @@ Orange → Active site residues
 Cyan   → Wild-type EGFR docking pose
 Red    → T790M mutant docking pose
 Green  → Wild-type T790 residue (Threonine)
-Orange → Mutant M790 residue (Methionine)
+Orange → Active site residues
+Blue → Mutant M790 residue (Methionine)
 ```
 
 ---

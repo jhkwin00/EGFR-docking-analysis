@@ -2,6 +2,10 @@
 
 > Structural dissection of acquired drug resistance — how a single amino acid substitution (T790M) structurally undermines Gefitinib binding in EGFR kinase
 
+> **Portfolio Note:** This is Part 1 of a two-project portfolio.
+> Part 2 → [Progesterone De Novo Design](https://github.com/jhkwin00/Progesterone-de-novo-design)
+> — Having analyzed *how small molecules bind existing proteins*, the next project asks the complementary question: *can we design a new protein from scratch to bind a target small molecule?*
+
 ---
 
 ## Analysis Workflow
@@ -87,6 +91,14 @@ When mutated to Met (T790M):
 This structural insight directly motivated the design of Osimertinib, a covalent 3rd-generation inhibitor
 that accommodates the T790M gatekeeper through a different binding geometry.
 
+### Connection to AI-Based Protein Design Research
+
+Understanding atomic-level interactions at a protein–ligand interface —
+binding pocket geometry, hydrogen bond networks, gatekeeper residue effects —
+is a prerequisite for the design problem that tools like **LigandMPNN**
+(Dauparas et al., *Nature Methods* 2025) solve: given a target small molecule,
+design a protein sequence whose backbone accommodates that molecule's exact atomic context.
+
 ---
 
 ## Project 1 — Molecular Docking Analysis
@@ -104,7 +116,7 @@ X-ray data (PDB: 4WKQ) are of high resolution, allowing ground-truth validation 
 ### Key Results
 
 | Condition | Binding Energy (ΔG) | Interpretation |
-| --- | --- | --- |
+| --- | --- |  --- |
 | Wild-type EGFR + Gefitinib | -8.755 kcal/mol | Strong binding |
 | T790M mutant EGFR + Gefitinib | -7.320 kcal/mol | Reduced binding |
 | Difference | 1.435 kcal/mol (↓16%) | Structural basis of resistance |
@@ -291,6 +303,16 @@ EGFR_project/
 2. The T790M gatekeeper mutation introduces steric bulk and eliminates a key hydrogen bond donor (–OH), reducing binding energy by ~16%.
 3. These findings are consistent with the structural rationale for Osimertinib (3rd-generation, covalent) development.
 4. ColabFold successfully predicted the T790M mutant structure with RMSD 0.682 Å vs. X-ray, validating its use in structure-based design workflows.
+
+### Natural Next Step
+
+Analyzing how gefitinib occupies the EGFR binding pocket raised a complementary question:
+rather than characterizing how a small molecule fits an existing protein,
+*can a new protein be designed from scratch to bind a chosen small molecule?*
+This question motivated the second project in this portfolio:
+[Progesterone De Novo Design](https://github.com/jhkwin00/Progesterone-de-novo-design),
+which applies the RFdiffusionAA → LigandMPNN → ColabFold pipeline
+to design a de novo binder for progesterone.
 
 ---
 
